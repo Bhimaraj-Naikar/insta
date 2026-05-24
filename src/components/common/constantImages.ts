@@ -4,5 +4,6 @@ export const CONSTANT_IMAGES ={
     facebook: require('../../assets/facebook.png'),
     storyBorder: require('../../assets/storyBorder.png'),
     live: require('../../assets/Live.png'),
-    tokyo: require('../../assets/Rectangle.jpg')
+    tokyo: require('../../assets/Rectangle.jpg'),
+    verificationBadge: require('../../assets/verified.png')
 }

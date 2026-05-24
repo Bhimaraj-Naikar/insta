@@ -42,7 +42,7 @@ const TodoList = () => {
             </View>
             <FlatList 
             data={todos}
-            sh
+            showsVerticalScrollIndicator={false}
             keyExtractor={(item) => item?.id}
             renderItem={({item}) => (
                 <View style={styles.todoListContainer}>
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
         paddingVertical: 8,
         fontSize: 20,
         paddingLeft: 5,
-        width: ''
+        flex: 1
     },
     listContainer: {
         backgroundColor: "#d6d6d636",

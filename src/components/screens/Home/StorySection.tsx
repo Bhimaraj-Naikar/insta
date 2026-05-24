@@ -1,24 +1,11 @@
 import { FlatList, Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { CONSTANT_IMAGES } from '../../common/imagesImport'
+import { CONSTANT_IMAGES } from '../../common/constantImages'
 import Icon from 'react-native-vector-icons/Feather'
-import { CONSTANT_COLOR } from '../../common/globalColors'
+import { CONSTANT_COLOR } from '../../common/constantColors'
+import { stories } from '../../common/utils'
 
 const StorySection = () => {
-  const stories = [
-    { id: 1, name: 'RJ', img: 'https://picsum.photos/seed/rj/100' },
-    { id: 2, name: 'Alex', img: 'https://picsum.photos/seed/alex/100', live: true },
-    { id: 3, name: 'Maya', img: 'https://picsum.photos/seed/maya/100' },
-    { id: 4, name: 'Sam', img: 'https://picsum.photos/seed/sam/100' },
-    { id: 5, name: 'Chris', img: 'https://picsum.photos/seed/chris/100' },
-    { id: 6, name: 'Lina', img: 'https://picsum.photos/seed/lina/100' },
-    { id: 7, name: 'Omar', img: 'https://picsum.photos/seed/omar/100' },
-    { id: 8, name: 'Zoe', img: 'https://picsum.photos/seed/zoe/100' },
-    { id: 9, name: 'Nina', img: 'https://picsum.photos/seed/nina/100' },
-    { id: 10, name: 'Leo', img: 'https://picsum.photos/seed/leo/100' },
-  ]
-
-
   return (
     <View style={styles.container}>
       <FlatList

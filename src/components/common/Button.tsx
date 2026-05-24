@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { CONSTANT_COLOR } from './globalColors'
+import { CONSTANT_COLOR } from './constantColors'
 
 type ButtonProps = {
     name: string,

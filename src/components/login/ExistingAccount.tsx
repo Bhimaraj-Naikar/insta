@@ -1,7 +1,7 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import { CONSTANT_IMAGES } from '../common/imagesImport'
-import { CONSTANT_COLOR } from '../common/globalColors'
+import { CONSTANT_IMAGES } from '../common/constantImages'
+import { CONSTANT_COLOR } from '../common/constantColors'
 import Button from '../common/Button'
 
 const ExistingAccount = () => {

@@ -1,8 +1,8 @@
 import { Image, StyleSheet, Text, TextInput, View } from 'react-native'
 import React from 'react'
-import { CONSTANT_IMAGES } from '../common/imagesImport'
+import { CONSTANT_IMAGES } from '../common/constantImages'
 import Button from '../common/Button'
-import { CONSTANT_COLOR } from '../common/globalColors'
+import { CONSTANT_COLOR } from '../common/constantColors'
 
 const LoginScreen = () => {
     return (

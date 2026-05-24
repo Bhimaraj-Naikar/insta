@@ -39,7 +39,7 @@ const SearchFeed = () => {
     )
 
     return (
-        <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+        <View style={styles.container}>
             {Array.from({ length: 5 }, (_, i) => (
                 <View key={i}>
                     {renderPatternA(i * 3)}
@@ -47,7 +47,7 @@ const SearchFeed = () => {
                     {renderPatternA(i * 3 + 2)}
                 </View>
             ))}
-        </ScrollView>
+        </View>
     )
 }
 

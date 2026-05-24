@@ -1,22 +1,13 @@
-import { FlatList, StyleSheet, Text, TextInput, View } from 'react-native'
-import React from 'react'
-import { CONSTANT_COLOR } from '../../common/globalColors'
+import { FlatList, StyleSheet, Text, TextInput, View, TouchableOpacity, Alert } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import { CONSTANT_COLOR } from '../../common/constantColors'
 import Icon from 'react-native-vector-icons/Ionicons'
 import Square from 'react-native-vector-icons/Ionicons'
-import { nanoid } from '@reduxjs/toolkit'
+import { Tabs } from './searchUtils'
 import SearchFeed from './SearchFeed'
 const SearchBar = () => {
-    const Tabs = [
-        { itemName: "IG Tv", id: nanoid() },
-        { itemName: "Shop", id: nanoid() },
-        { itemName: "Style", id: nanoid() },
-        { itemName: "Sports", id: nanoid() },
-        { itemName: "Auto", id: nanoid() },
-        { itemName: "Sato", id: nanoid() },
-        { itemName: "Mato", id: nanoid() },
-        { itemName: "pato", id: nanoid() },
-    ]
-    console.log("Stringified data is here: ",JSON.stringify(Tabs))
+
+    
     return (
         <>
             <View style={styles.searchContainer}>
@@ -25,12 +16,14 @@ const SearchBar = () => {
                     <Icon name="search" color={CONSTANT_COLOR?.grey} size={24} />
                     <TextInput placeholder='Search' style={styles.searchBox} />
                 </View>
+                <TouchableOpacity onPress={() => {}}>
                 <View style={styles.scanContainer}>
                     <Icon name="scan" size={24} color="#000"/>
                     <View style={styles.scanOverly}>
                         <Square name="square-outline" color="#000" size={12}/>
                     </View>
                 </View>
+                </TouchableOpacity>
             </View>
             <View>
                 <FlatList
@@ -84,6 +77,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        marginTop:30
     },
     scanContainer:{
         marginRight:20,

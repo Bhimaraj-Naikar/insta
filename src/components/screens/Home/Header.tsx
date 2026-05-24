@@ -3,8 +3,8 @@ import React from 'react'
 import Icon from 'react-native-vector-icons/SimpleLineIcons'
 import Tv from 'react-native-vector-icons/MaterialIcons'
 import Send from 'react-native-vector-icons/Feather'
-import { CONSTANT_IMAGES } from '../../common/imagesImport'
-import { CONSTANT_COLOR } from '../../common/globalColors'
+import { CONSTANT_IMAGES } from '../../common/constantImages'
+import { CONSTANT_COLOR } from '../../common/constantColors'
 
 const Header = () => {
     return (
